@@ -172,7 +172,7 @@ class VideoFrameHandler:
 
             EAR_txt = f"EAR: {round(EAR, 2)}"
             DROWSY_TIME_txt = f"DROWSY: {round(self.state_tracker['DROWSY_TIME'], 3)} Secs"
-            plot_text(frame, EAR_txt, self.EAR_txt_pos, self.state_tracker["COLOR"])
+            # plot_text(frame, EAR_txt, self.EAR_txt_pos, self.state_tracker["COLOR"])
             plot_text(frame, DROWSY_TIME_txt, DROWSY_TIME_txt_pos, self.state_tracker["COLOR"])
 
         else:
