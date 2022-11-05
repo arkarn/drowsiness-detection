@@ -2,11 +2,12 @@ import os
 import av
 import threading
 import streamlit as st
+import streamlit_nested_layout
 from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
 
 from audio_handling import AudioFrameHandler
 from drowsy_detection import VideoFrameHandler
-
+from ads import css_string
 
 
 # Define the audio file to use.
@@ -82,4 +83,5 @@ with col1:
     )
 
 with col2:
-    st.markdown("""""", unsafe_allow_html=True)
+    # Banner for newsletter subscription, jobs, and consulting.
+    st.markdown(css_string, unsafe_allow_html=True)
