@@ -83,5 +83,4 @@ with col1:
     )
 
 with col2:
-    # Banner for newsletter subscription, jobs, and consulting.
-    st.markdown(css_string, unsafe_allow_html=True)
+    st.markdown("""""", unsafe_allow_html=True)
