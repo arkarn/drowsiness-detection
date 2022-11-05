@@ -29,14 +29,15 @@ col1, col2 = st.columns(spec=[6, 2], gap="medium")
 with col1:
     st.title("Drowsiness Detection!!!🥱😴")
     with st.container():
-        c1, c2 = st.columns(spec=[1, 1])
-        with c1:
-            # The amount of time (in seconds) to wait before sounding the alarm.
-            WAIT_TIME = st.slider("Seconds to wait before sounding alarm:", 0.0, 5.0, 1.0, 0.25)
+        WAIT_TIME = st.slider("Seconds to wait before sounding alarm:", 0.0, 5.0, 1.0, 0.25)
+        # c1, c2 = st.columns(spec=[1, 1])
+        # with c1:
+        #     # The amount of time (in seconds) to wait before sounding the alarm.
+        #     WAIT_TIME = st.slider("Seconds to wait before sounding alarm:", 0.0, 5.0, 1.0, 0.25)
 
-        with c2:
-            # Lowest valid value of Eye Aspect Ratio. Ideal values [0.15, 0.2].
-            EAR_THRESH = st.slider("Eye Aspect Ratio threshold:", 0.0, 0.4, 0.18, 0.01)
+        # with c2:
+        #     # Lowest valid value of Eye Aspect Ratio. Ideal values [0.15, 0.2].
+        #     EAR_THRESH = st.slider("Eye Aspect Ratio threshold:", 0.0, 0.4, 0.18, 0.01)
 
 thresholds = {
     "EAR_THRESH": EAR_THRESH,
