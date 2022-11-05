@@ -7,7 +7,6 @@ from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
 
 from audio_handling import AudioFrameHandler
 from drowsy_detection import VideoFrameHandler
-from ads import css_string
 
 
 # Define the audio file to use.
